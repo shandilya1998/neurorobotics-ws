@@ -192,6 +192,9 @@ then
 	if [[ "$2" == "tello" ]]
 	then
 		iexec_ros nrt_container "source /ws/ros_ws/install/setup.bash && ros2 launch controllers tello_launch.py"
+	elif [[ "$2" == "tello-orbslam3" ]]
+	then
+		iexec_ros nrt_container "source /ws/ros_ws/install/setup.bash && ros2 launch controllers tello_orbslam3_mono_launch.py"
 	fi
 
 elif [[ $1 == "kill" ]]

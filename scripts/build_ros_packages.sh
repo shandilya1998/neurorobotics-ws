@@ -1,3 +1,4 @@
+
 #!/bin/bash
 
 export CMAKE_PREFIX_PATH=/Pangolin/build:$CMAKE_PREFIX_PATH
@@ -9,4 +10,4 @@ echo "***********************************************"
 echo $PWD
 echo "***********************************************"
 # rm -rf build install
-colcon build --symlink-install --cmake-args '-DCMAKE_EXPORT_COMPILE_COMMANDS=1' '-DCMAKE_BUILD_TYPE=Release' '-Wno-dev' --mixin debug
+colcon build --symlink-install --cmake-args '-DCMAKE_EXPORT_COMPILE_COMMANDS=1' '-DCMAKE_BUILD_TYPE=RelWithDebInfo' '-Wno-dev' --mixin debug
